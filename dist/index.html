@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="runtime.ba93d7810d6241d5733c.js"></script><script defer src="main.ba93d7810d6241d5733c.js"></script></head>
+    <title>To-do-list</title>
+<script defer src="runtime.9facdddeeab4d047ae9d.js"></script><script defer src="main.9facdddeeab4d047ae9d.js"></script></head>
 <body>
-    
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center w-100">
+
+            <div class="card col-lg-6 col-md-8 col-12 ">
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">Today's To Do<span><i
+                                class="icon fas fa-rotate fa-fw"></i></span></h5>
+                    <input type="text" class="form-control my-3" aria-label="Default"
+                        aria-describedby="inputGroup-sizing-default" placeholder="Add to your lists">
+                    <ul id="items" class="p-1">
+                        <li draggable="true" id="1" class="d-flex justify-content-between align-items-center">
+                            <input type="checkbox">
+                            <label class="flex-grow-1">wash the dishes</label>
+                            <i class="dots fa-solid fa-ellipsis-vertical"></i>                       
+                        </li>
+                    <!-- placeholder for to-do-items -->
+                    </ul>
+                    <div class="text-center">
+                        <a href="#" class="text-secondary clear">Clear all Completed</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

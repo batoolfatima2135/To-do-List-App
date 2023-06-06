@@ -1,13 +1,28 @@
-import _ from 'lodash';
 import './style.css';
+import displayTask from './modules/display.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
-function component() {
-    const element = document.createElement('div');
-  
-     // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const tasks = [
+  {
+    index: 1,
+    description: 'wash the dishes',
+    completed: false,
+  },
+  {
+    index: 2,
+    description: 'fix car',
+    completed: false,
+  },
+  {
+    index: 3,
+    description: 'Cook food',
+    completed: false,
+  },
+  {
+    index: 4,
+    description: 'Eat dinner',
+    completed: false,
+  },
+];
+displayTask(tasks);
