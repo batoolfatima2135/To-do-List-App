@@ -11,9 +11,10 @@ export default function displayTask(tasks) {
     checkbox.type = 'checkbox';
     li.appendChild(checkbox);
     // Creating label for checkbox
-    const label = document.createElement('label');
-    label.classList.add('flex-grow-1', 'text-left');
-    label.textContent = task.description;
+    const label = document.createElement('input');
+    label.type = 'text';
+    label.classList.add('flex-grow-1', 'text-left', 'm-1', 'form-control');
+    label.value = task.description;
     li.appendChild(label);
     // Creating option icon
     const icon = document.createElement('i');
