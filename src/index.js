@@ -28,4 +28,4 @@ const tasks = [
     completed: false,
   },
 ];
-displayTask(tasks);
+window.addEventListener('DOMContentLoaded', displayTask(tasks));
