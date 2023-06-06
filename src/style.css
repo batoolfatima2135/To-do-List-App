@@ -1,3 +1,33 @@
-body {
-    background-color: bisque;
+
+.container {
+  height: 100vh;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  border: none;
+}
+
+.clear {
+  text-decoration: none;
+}
+
+.clear:hover {
+  text-decoration: underline;
+  color: black !important;
+}
+
+.dots {
+  margin-left: auto !important;
+}
+
+.fa-solid {
+  color: gray;
 }
