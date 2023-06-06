@@ -18,7 +18,6 @@ module.exports = {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: '/',
   },
   optimization: {
     runtimeChunk: 'single',
