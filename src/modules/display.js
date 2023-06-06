@@ -18,7 +18,7 @@ export default function displayTask(tasks) {
     li.appendChild(label);
     // Creating option icon
     const icon = document.createElement('i');
-    icon.classList.add('fa-solid', 'fa-ellipsis-vertical');
+    icon.classList.add('fas', 'fa-trash', 'trash');
     li.appendChild(icon);
     // Appending elements
     ul.appendChild(li);
