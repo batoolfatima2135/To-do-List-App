@@ -19,6 +19,10 @@ label {
   text-decoration: none;
 }
 
+.trash {
+  margin-left: 20px;
+}
+
 .clear:hover {
   text-decoration: underline;
   color: black !important;
