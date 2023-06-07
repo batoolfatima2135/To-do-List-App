@@ -5,7 +5,7 @@ import add from './modules/addTask.js';
 import remove from './modules/removeCompleted.js';
 
 const input = document.getElementById('task');
-const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 const clear = document.getElementById('clearCompleted');
 const refresh = document.getElementById('refresh');
 
@@ -20,7 +20,8 @@ clear.addEventListener('click', () => {
   displayTask(tasks);
 });
 refresh.addEventListener('click', () => {
+  tasks = [];
   localStorage.removeItem('tasks');
-  displayTask([]);
+  displayTask(tasks);
 });
 displayTask(tasks);
