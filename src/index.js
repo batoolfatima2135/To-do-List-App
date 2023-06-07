@@ -1,27 +1,26 @@
 import './style.css';
 import displayTask from './modules/display.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import add from './modules/addTask.js';
+import remove from './modules/removeCompleted.js';
 
-const tasks = [
-  {
-    index: 1,
-    description: 'wash the dishes',
-    completed: false,
-  },
-  {
-    index: 2,
-    description: 'fix car',
-    completed: false,
-  },
-  {
-    index: 3,
-    description: 'Cook food',
-    completed: false,
-  },
-  {
-    index: 4,
-    description: 'Eat dinner',
-    completed: false,
-  },
-];
-window.addEventListener('DOMContentLoaded', displayTask(tasks));
+const input = document.getElementById('task');
+const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+const clear = document.getElementById('clearCompleted');
+const refresh = document.getElementById('refresh');
+
+input.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    add(tasks);
+    displayTask(tasks);
+  }
+});
+clear.addEventListener('click', () => {
+  remove(tasks);
+  displayTask(tasks);
+});
+refresh.addEventListener('click', () => {
+  localStorage.removeItem('tasks');
+  displayTask([]);
+});
+displayTask(tasks);

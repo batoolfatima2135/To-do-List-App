@@ -63,6 +63,7 @@
 - **To-do list with task**
 - **Input to put new task**
 - **checkbox to mark task as done**
+- **Clear completed task button**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +155,7 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add more interations**
-- [ ] **Add Edit and delete functionalities**
+- [ ] **Add drag and drop functionalities**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
