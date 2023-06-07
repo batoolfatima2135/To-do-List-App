@@ -7,6 +7,7 @@ import remove from './modules/removeCompleted.js';
 const input = document.getElementById('task');
 const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 const clear = document.getElementById('clearCompleted');
+const refresh = document.getElementById('refresh');
 
 input.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
@@ -17,5 +18,9 @@ input.addEventListener('keydown', (event) => {
 clear.addEventListener('click', () => {
   remove(tasks);
   displayTask(tasks);
+});
+refresh.addEventListener('click', () => {
+  localStorage.removeItem('tasks');
+  displayTask([]);
 });
 displayTask(tasks);
