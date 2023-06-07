@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21c93fc1d0.js" crossorigin="anonymous"></script>
     <title>To-do-list</title>
-<script defer src="/runtime.b67bb3e32c27658c60ab.js"></script><script defer src="/main.b67bb3e32c27658c60ab.js"></script></head>
+<script defer src="runtime.6dc2392ee712d319abaa.js"></script><script defer src="main.6dc2392ee712d319abaa.js"></script></head>
 <body>
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row justify-content-center w-100">
 
             <div class="card col-lg-6 col-md-8 col-12 ">
                 <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between align-items-center">Today's To Do<span><i
-                                class="icon fas fa-rotate fa-fw"></i></span></h5>
-                    <input type="text" class="form-control my-3" aria-label="Default"
+                    <h5 class="card-title d-flex justify-content-between align-items-center">Today's To Do<span>
+                        <i class="fas fa-sync" id="refresh"></i>
+                    </span></h5>
+                    <input type="text" class="form-control my-3" aria-label="Default" id="task"
                         aria-describedby="inputGroup-sizing-default" placeholder="Add to your lists">
                     <ul id="items" class="p-1">
-                        <li draggable="true" id="1" class="d-flex justify-content-between align-items-center">
-                            <input type="checkbox">
-                            <label class="flex-grow-1">wash the dishes</label>
-                            <i class="dots fa-solid fa-ellipsis-vertical"></i>                       
-                        </li>
                     <!-- placeholder for to-do-items -->
                     </ul>
                     <div class="text-center">
-                        <a href="#" class="text-secondary clear">Clear all Completed</a>
+                        <a href="#" class="text-secondary clear" id="clearCompleted">Clear all Completed</a>
                     </div>
 
                 </div>
