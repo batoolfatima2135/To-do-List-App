@@ -31,7 +31,7 @@
 
 # 📖 to-do-list <a name="about-project"></a>
 
-**to-do-list** is a Simple app to record to-do tasks.
+**to-do-list** is a Simple app to record to-do tasks with all functionalities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
