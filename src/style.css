@@ -1,6 +1,6 @@
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 input::placeholder {
@@ -9,6 +9,10 @@ input::placeholder {
 
 ul {
   list-style: none;
+}
+
+i {
+  cursor: pointer;
 }
 
 label {

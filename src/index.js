@@ -11,8 +11,10 @@ const refresh = document.getElementById('refresh');
 
 input.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
-    add(tasks);
-    displayTask(tasks);
+    if (input.value !== '') {
+      add(tasks);
+      displayTask(tasks);
+    }
   }
 });
 clear.addEventListener('click', () => {
