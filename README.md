@@ -7,7 +7,6 @@
 
 </div>
 
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -90,13 +89,11 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder using:
-```git clone https://github.com/batoolfatima2135/to-do-list.git```
-
+`git clone https://github.com/batoolfatima2135/to-do-list.git`
 
 ### Install
 
 Install this project with:
-
 
 ```sh
   cd my-project
@@ -130,6 +127,7 @@ To run tests, run the following command:
 ```sh
   npx stylelint "**/*.{css,scss}" --fix
 ```
+
 ```sh
   npx eslint "**/*.js" --fix
 ```
@@ -137,8 +135,8 @@ To run tests, run the following command:
 ### Deployment
 
 You can deploy this project using:
-- GitHub Pages
 
+- GitHub Pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,11 +148,11 @@ You can deploy this project using:
 - Twitter: [@twitterhandle](https://twitter.com/batool2135)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/batool-fatima-515531196/)
 
-👤 **Kgomotso**
+👤 **Md Mahadi Hasan Rifat**
 
-- GitHub: [@githubhandle](https://github.com/Kgomotso196)
-- Twitter: [@twitterhandle](https://twitter.com/t_r_o_o_s_)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kgomotso-nacane/)
+- GitHub: [@githubhandle](https://github.com/Rifat8080)
+- Twitter: [@twitterhandle](https://twitter.com/mdmahadirifat98)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/md-mahadi-hasan-rifat-8b7851265/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,7 +171,6 @@ Feel free to check the [issues page](https://github.com/batoolfatima2135/to-do-l
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project, kindly give it a star.⭐
@@ -189,4 +186,3 @@ I would like to thank Microverse and my coding partner for helping me with this 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
