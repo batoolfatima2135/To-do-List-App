@@ -29,7 +29,7 @@ describe('test for the addTask', () => {
     // Assert of the test
     expect(mockLocalStorage.setItem).toHaveBeenCalledWith(
       'tasks',
-      JSON.stringify(tasks)
+      JSON.stringify(tasks),
     );
   });
 });
@@ -68,7 +68,7 @@ describe('test for deleteTask', () => {
     // Assert of test
     expect(mockLocalStorage.setItem).toHaveBeenCalledWith(
       'tasks',
-      JSON.stringify(tasks)
+      JSON.stringify(tasks),
     );
   });
 });
