@@ -1,4 +1,4 @@
-import { checked, unchecked } from '../src/modules/checked.js';
+import updateChecked from '../src/modules/checked.js';
 
 describe('Testing edit function', () => {
   // Arrange of the test
@@ -14,14 +14,14 @@ describe('Testing edit function', () => {
   ];
   test('checked should update the tasks status', () => {
     // Act of the test
-    checked(tasks, 2);
+    updateChecked(tasks, 2);
 
     // Assert of the test
     expect(tasks[1].completed).toEqual(true);
   });
   test('unchecked should update the tasks status', () => {
     // Act of the test
-    unchecked(tasks, 2);
+    updateChecked(tasks, 2);
 
     // Assert of the test
     expect(tasks[1].completed).toEqual(false);

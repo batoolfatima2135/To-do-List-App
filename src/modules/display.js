@@ -1,4 +1,4 @@
-import { checked, unchecked } from './checked.js';
+import updateChecked from './checked.js';
 import deleteTask from './deleteTask.js';
 import edit from './edittask.js';
 
@@ -33,15 +33,14 @@ export default function displayTask(tasks) {
     // Adding event listner
     checkbox.addEventListener('change', (event) => {
       if (event.target.checked) {
-        checked(tasks, task.index);
+        updateChecked(tasks, task.index);
         label.style.textDecoration = 'line-through';
       } else {
-        unchecked(tasks, task.index);
+        updateChecked(tasks, task.index);
         label.style.textDecoration = 'none';
       }
     });
     if (task.completed) {
-      checked(tasks, task.index);
       label.style.textDecoration = 'line-through';
       checkbox.checked = true;
     }
