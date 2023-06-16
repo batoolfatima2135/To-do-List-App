@@ -1,10 +1,13 @@
-export function checked(tasks, index) {
-  const task = tasks.find((obj) => obj.index === index);
-  task.completed = true;
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-export function unchecked(tasks, index) {
-  const task = tasks.find((obj) => obj.index === index);
-  task.completed = false;
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+export default function updateChecked(tasks, index) {
+  tasks.map((item) => {
+    if (item.index === index) {
+      if (item.completed === false) {
+        item.completed = true;
+      } else {
+        item.completed = false;
+      }
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+    return item;
+  });
 }
